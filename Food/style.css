@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* lighter background for better readability */
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: inline-block; /* ensure nav links stack horizontally */
+}
+.food {
+    position: relative; /* make sure content inside it positions correctly */
+    width: 100%;
+    text-align: center; /* center content */
+}
+.food img {
+    max-width: 100% ;
+    height: auto; /* make image responsive */
+    opacity: 0.2;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center content */
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    padding: 20px;
+    color: white; /* white text for better visibility */
+    width: 80%; /* adjust width as needed */
+    max-width: 600px; /* limit maximum width */
+}
+.about{
+    display: flex;
+    gap: 90px;
+    margin-top: 40px;
+    margin: 50px;
+}
+.aboutcont{
+    width: 600px;
+}
+.timimg{
+    margin-top: 20px;
+}
+.menus{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.menu{
+    text-align: center;
+}
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+input[type="text"], textarea{
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="number"]{
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="date"]{
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.buttin{
+    width: 20%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #04AA6D;
+}
+.buttin:hover{
+    background-color: #45a049;
+}
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
